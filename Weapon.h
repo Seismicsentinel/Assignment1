@@ -35,6 +35,8 @@ public:
             : name(name),
               hitPoints(hitPoints) {} //This is equivalent to this.name = name and this.hitpoints = hitpoitns;
 
+    Weapon();   // Adding a blank constructor here to call from my subclasses, when I don't want to run the above one. -- Elion 1/29
+
     /**
      * Detructor
      */
