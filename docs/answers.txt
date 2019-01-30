@@ -1,0 +1,90 @@
+(a)
+
+# On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working directory clean
+
+(b)
+
+My current git log shows 5 commits -> found with the command <git log>
+
+(c)
+
+from using <git log .gitignore> :
+
+Date:   Thu Jan 10 16:45:38 2019 -0500
+
+(d)
+
+- A branch can be used to make changes that won't change the remote 
+repository when you push the master branch in your local repository 
+to the remote. 
+
+- A branch can also be used as a divider for work. If there's a specific
+task, bug fix, or feature that needs to be included, it can be put in 
+its own branch to keep a project organized. 
+
+(e)
+
+- <git log> shows a log of every commit so far in the repository you run 
+the command from. It shows who committed when, a unique code for the 
+commit, and the message included with the commit.
+
+- <git status> gives an overview of the current changes since the last commit. 
+It lists all modified files since the last commit, and groups them into two groups 
+- changed that are staged to be added to the commit (added with git add <filename>),
+and changes that aren't staged for the current commit. 
+
+(f) 
+
+git log Weapon.h
+
+(g)
+
+git log --grep="file"
+
+(h) 
+
+I. Inheritance in the context of object oriented programming is a paradigm
+where subclasses can inherit the member data and member functions of a parent 
+class. Special keywords in OOP-oriented languages can designate one class
+as a child class of another, and automatically have all parent class data 
+on instantiation, plus other added data if desired.
+
+II. Polymorphism happens when a parent class's function is called 
+on an array of references to the parent's children. These children can have
+different definitions of the parent function, so a line such as 
+
+	list[i] = parentClass->calculatePerimeter()
+
+in a loop can actually call different versions of calculatePerimeter(), depending
+on which subclass the current reference in the loop is currently pointing to. 
+
+III. Encapsulation refers to a practice in object-oriented programming where 
+member data is made private and made not directly available to any requester 
+of the member data. To change or view this data, setters and getters respectively have to
+be called as member functions of the class. These setters and getters can include
+error-checking logic, or setters and getters may not be implemented at all, if say
+for instance they're crucial to the operation of an object, and shouldn't be changed
+by external calls to change their data. 
+
+(i)
+
+With a centeralized integration manager, said manager pulls all changes from the developers'
+public repositories and resolves the conflicts alone, and then pushes the final product with 
+all conflicts resolved to the blessed repository. In a "Dictator and Lieutenants" type workflow, 
+conflict resolution is broken up between multiple people. Developers send changes directly to 
+lieutenants, who solve conflicts from whatever developers send them code. Then they pass on 
+this semi-revised code to a dictator, who finishes up conflicts made from getting all of the
+code from all of the lieutenants, and who can then push the changes live to a blessed repository. 
+
+(j)
+
+If there are that many developers working on code, there's going to need to be a lot more intermittent
+conflict resolution, communication, and coordination in the development team to be successful. The
+centralized workflow only allows for one person to resolve conflicts, whereas the dictator and 
+lieutenants workflow has multiple people resolving conflicts in varying scopes. Many lieutenants can 
+work on slight differences and contradictions in files, whereas higher-level lieutenants or the
+dictator can resolve conflicts across multiple files or directories not agreeing with each other. 
+
