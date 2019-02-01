@@ -1,31 +1,35 @@
 /* 
- * File:   SimpleHammer.h
+ * File:   Dagger.h
  * Author: Elion Sickler
  * 
- * Header file for the SimpleHammer weapon
- * Created on 1/29/2019.
+ * Header file for the Dagger weapon
+ * Created on 1/31/2019.
  * 
  */
 
 #include <string>
+#include <cstdlib>
 #include "Weapon.h"
 
-#ifndef SIMPLEHAMMER_H
-#define SIMPLEHAMMER_H
+#ifndef DAGGER_H
+#define DAGGER_H
 
-// Took the frame of this object from CommonSword. 
+// Took the frame of this object from SimpleHammer. 
 
-class SimpleHammer : public Weapon {
+class Dagger : public Weapon {
 public:
 
-    SimpleHammer() : Weapon("Simple Hammer", 25.0){} //Calls Weapon(name, hitpoints) constructor with values Simple Hammer and 25.0
+    Dagger()
+    {
+        name = "Dagger";
+        hitPoints = 40;
+    }
 
-
-    virtual ~SimpleHammer() {};
+    virtual ~Dagger() {};
 
     virtual double hit(double armor);
 
 };
 
-#endif /* SIMPLEHAMMER_H */
+#endif /* DAGGER_H */
 

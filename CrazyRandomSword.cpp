@@ -4,6 +4,7 @@
  * 
  * Now implementing Crazy Random Sword, after implementing SimpleHammer.
  * Date implemented: 1/29/2019
+ * 
  */
 
 #include "CrazyRandomSword.h"

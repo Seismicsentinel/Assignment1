@@ -8,7 +8,7 @@
  */
 
 #include <string>
-#include <cstdlib>
+#include <cstdlib>  // for Rand function
 
 #include "Weapon.h"
 
@@ -23,7 +23,7 @@ public:
     CrazyRandomSword()
     {
         name = "Crazy Random Sword";
-        hitPoints = 7 + ( rand() % 94 );
+        hitPoints = 7 + ( rand() % 94 );    // Sets damage somewhere from 7 to (7 + 93)
     } 
 
 
