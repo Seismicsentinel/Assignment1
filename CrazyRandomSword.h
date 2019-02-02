@@ -22,6 +22,7 @@ public:
 
     CrazyRandomSword()
     {
+        srand(time(NULL));
         name = "Crazy Random Sword";
         hitPoints = 7 + ( rand() % 94 );    // Sets damage somewhere from 7 to (7 + 93)
     } 

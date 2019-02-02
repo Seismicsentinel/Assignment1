@@ -88,3 +88,18 @@ lieutenants workflow has multiple people resolving conflicts in varying scopes. 
 work on slight differences and contradictions in files, whereas higher-level lieutenants or the
 dictator can resolve conflicts across multiple files or directories not agreeing with each other. 
 
+RoleGame OOP Principals:
+
+The prototype of the game is using both polymorphism and encapsulation. 
+
+Since the members name and hitPoints
+in the Weapon class are protected, they can't be changed by any function that isn't a member function of class 
+Weapon or any of its subclasses - meaning trying to reference this member data in a function like main directly 
+through the dot operator would result in a compiler error. The static WeaponFactory instance is private as well, 
+and can only be called through WeaponFactory:: .
+
+The prototype makes use of polymorphism in the simulateWeapon function. The pointer weapon is of type Weapon, 
+but each call to weapon->hit(armor) is bounded to a different subclass's definition of hit(armor) at runtime. 
+This means instead of instantiating static subclasses in main, the pointer weapon* can point to instance of a 
+subclass, and a call like main->simulateWeapon->weapon->hit(armor) calls different subclass functions depending 
+on which subclass the (class Weapon) pointer weapon* is pointing to. 

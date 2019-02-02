@@ -10,6 +10,11 @@
 #include <iostream>
 #include "Weapon.h"
 #include "WeaponFactory.h"
+#include "CommonSword.h"
+#include "CommonSpear.h"
+#include "CrazyRandomSword.h"
+#include "SimpleHammer.h"
+#include "Dagger.h"
 
 using namespace std;
 
@@ -39,6 +44,17 @@ int main(int argc, char** argv) {
     simulateWeapon(weapon, armor);
     delete(weapon);
 
+    weapon = WeaponFactory::getInstance()->getWeapon("Crazy Random Sword");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("Hammer");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
+
+    weapon = WeaponFactory::getInstance()->getWeapon("Dagger");
+    simulateWeapon(weapon, armor);
+    delete(weapon);
     return 0;
 }
 

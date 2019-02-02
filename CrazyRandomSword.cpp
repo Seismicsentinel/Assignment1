@@ -12,6 +12,7 @@
 
 double CrazyRandomSword::hit(double armor)
 {
+    srand(time(NULL));
     // Gets a third of the armor -- maximum that CRS can penetrate. 
     int thirdOfArmor = armor / 3;
 
